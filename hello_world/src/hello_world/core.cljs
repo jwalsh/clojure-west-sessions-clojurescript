@@ -25,3 +25,5 @@
  (dotimes [_ 10]
    (js/console.log _)
    (time (doall (map #(js/Math.pow % %) bigv)))))
+
+(set! (.-title js/document) "New Page Title")
